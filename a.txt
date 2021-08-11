@@ -1,0 +1,125 @@
+
+> js-advanced-functions-first-class-functions-lab@0.1.0 test
+> mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json
+
+
+
+  index.js
+    returnFirstTwoDrivers()
+      1) should return a new array containing the first two drivers from the passed-in array
+    returnLastTwoDrivers()
+      2) should return an array of the last two drivers
+    selectingDrivers
+      3) has the `returnFirstTwoDrivers` function to as its first element
+      4) has the `returnLastTwoDrivers` function to as its last element
+      5) allows us to invoke either function from the array
+    createFareMultiplier()
+      6) returns a function
+      7) should multiply a given value using the created multiplier
+    fareDoubler()
+      8) is a function
+      9) doubles fares
+    fareTripler()
+      10) is a function
+      11) triples fares
+    selectDifferentDrivers(arrayOfDrivers, function)
+      12) returns the first two drivers when passed returnFirstTwoDrivers() as the second argument
+      13) returns the last two drivers when passed returnLastTwoDrivers() as the second argument
+
+
+  0 passing (208ms)
+  13 failing
+
+  1) index.js
+       returnFirstTwoDrivers()
+         should return a new array containing the first two drivers from the passed-in array:
+     ReferenceError: returnFirstTwoDrivers is not defined
+      at Context.<anonymous> (test/indexTest.js:10:7)
+      at processImmediate (node:internal/timers:464:21)
+
+  2) index.js
+       returnLastTwoDrivers()
+         should return an array of the last two drivers:
+     ReferenceError: returnLastTwoDrivers is not defined
+      at Context.<anonymous> (test/indexTest.js:16:7)
+      at processImmediate (node:internal/timers:464:21)
+
+  3) index.js
+       selectingDrivers
+         has the `returnFirstTwoDrivers` function to as its first element:
+     ReferenceError: selectingDrivers is not defined
+      at Context.<anonymous> (test/indexTest.js:22:14)
+      at processImmediate (node:internal/timers:464:21)
+
+  4) index.js
+       selectingDrivers
+         has the `returnLastTwoDrivers` function to as its last element:
+     ReferenceError: selectingDrivers is not defined
+      at Context.<anonymous> (test/indexTest.js:26:14)
+      at processImmediate (node:internal/timers:464:21)
+
+  5) index.js
+       selectingDrivers
+         allows us to invoke either function from the array:
+     ReferenceError: selectingDrivers is not defined
+      at Context.<anonymous> (test/indexTest.js:30:14)
+      at processImmediate (node:internal/timers:464:21)
+
+  6) index.js
+       createFareMultiplier()
+         returns a function:
+     ReferenceError: createFareMultiplier is not defined
+      at Context.<anonymous> (test/indexTest.js:38:30)
+      at processImmediate (node:internal/timers:464:21)
+
+  7) index.js
+       createFareMultiplier()
+         should multiply a given value using the created multiplier:
+     ReferenceError: createFareMultiplier is not defined
+      at Context.<anonymous> (test/indexTest.js:44:30)
+      at processImmediate (node:internal/timers:464:21)
+
+  8) index.js
+       fareDoubler()
+         is a function:
+     ReferenceError: fareDoubler is not defined
+      at Context.<anonymous> (test/indexTest.js:52:14)
+      at processImmediate (node:internal/timers:464:21)
+
+  9) index.js
+       fareDoubler()
+         doubles fares:
+     ReferenceError: fareDoubler is not defined
+      at Context.<anonymous> (test/indexTest.js:56:7)
+      at processImmediate (node:internal/timers:464:21)
+
+  10) index.js
+       fareTripler()
+         is a function:
+     ReferenceError: fareTripler is not defined
+      at Context.<anonymous> (test/indexTest.js:62:14)
+      at processImmediate (node:internal/timers:464:21)
+
+  11) index.js
+       fareTripler()
+         triples fares:
+     ReferenceError: fareTripler is not defined
+      at Context.<anonymous> (test/indexTest.js:66:7)
+      at processImmediate (node:internal/timers:464:21)
+
+  12) index.js
+       selectDifferentDrivers(arrayOfDrivers, function)
+         returns the first two drivers when passed returnFirstTwoDrivers() as the second argument:
+     ReferenceError: selectDifferentDrivers is not defined
+      at Context.<anonymous> (test/indexTest.js:72:7)
+      at processImmediate (node:internal/timers:464:21)
+
+  13) index.js
+       selectDifferentDrivers(arrayOfDrivers, function)
+         returns the last two drivers when passed returnLastTwoDrivers() as the second argument:
+     ReferenceError: selectDifferentDrivers is not defined
+      at Context.<anonymous> (test/indexTest.js:76:7)
+      at processImmediate (node:internal/timers:464:21)
+
+
+
